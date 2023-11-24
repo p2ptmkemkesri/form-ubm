@@ -8,28 +8,42 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* Kode Warna */
+:root {
+    --warna1: #2eb4ad;
+    --warna2: #ffffff;
+    --warna3: rgb(246, 255, 251);
+    --warna4: #d3db25;
+    --warna5: #63c6c2;
+    --warna6: #bbbbbb;
+    --warna7: #6c6c6c;
+}
 
 body {
-    background: repeating-linear-gradient(90deg, #c9f1e1 0, #c9f1e1 5%, transparent 0, transparent 50%), repeating-linear-gradient(180deg, #c9f1e1 0, #c9f1e1 5%, transparent 0, transparent 50%);
+    background: repeating-linear-gradient(90deg, #e6fff5 0, #e6fff5 5%, transparent 0, transparent 50%), repeating-linear-gradient(180deg, #e6fff5 0, #e6fff5 5%, transparent 0, transparent 50%);
     background-size: 3em 3em;
-    background-color: #ffffff;
     opacity: 1;
 }
 
+.judul {
+    /* background-color: red !important; */
+    color: var(--warna7);
+}
+
 #regForm {
-    background-color: #ffffff;
+    background-color: var(--warna2);
     margin: 0px auto;
     padding: 40px;
-    border-radius: 10px
+    border-radius: 10px;
+    border: 2px solid var(--warna5);
 }
 
 #register {
-
-    color: #6A1B9A;
+    color: var(--warna1);
 }
 
 h1 {
-    text-align: center
+    text-align: center;
 }
 
 input {
@@ -45,14 +59,12 @@ input {
 
 
 .tab input:focus {
-
-    border: 1px solid #6a1b9a !important;
+    border: 1px solid var(--warna1) !important;
     outline: none;
 }
 
 input.invalid {
-
-    border: 1px solid #e03a0666;
+    border: 2px solid #d2191966;
 }
 
 .tab {
@@ -60,26 +72,25 @@ input.invalid {
 }
 
 button {
-    background-color: #6A1B9A;
-    color: #ffffff;
+    background-color: var(--warna1);
+    color: var(--warna2);
     border: none;
     border-radius: 50%;
     padding: 10px 20px;
     font-size: 17px;
-    cursor: pointer
+    cursor: pointer;
 }
 
 button:hover {
-    opacity: 0.8
+    opacity: 0.8;
 }
 
 button:focus {
-
     outline: none !important;
 }
 
 #prevBtn {
-    background-color: #bbbbbb
+    background-color: var(--warna6);
 }
 
 
@@ -96,29 +107,29 @@ button:focus {
     height: 40px;
     width: 40px;
     margin: 0 2px;
-    background-color: #bbbbbb;
+    background-color: var(--warna6);
+
     border: none;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 15px;
-    color: #6a1b9a;
+    color: var(--warna2);
     opacity: 0.5;
 }
 
 .step.active {
-    opacity: 1
+    opacity: 1;
 }
 
 
 .step.finish {
-    color: #fff;
-    background: #6a1b9a;
+    color: var(--warna2);
+    background: var(--warna1);
     opacity: 1;
 
 }
-
 
 
 .all-steps {
