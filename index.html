@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form Survey UBM</title>
     <link rel="stylesheet" href="style.css">
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> -->
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"> -->
@@ -22,7 +22,7 @@
                     <p class="text-center"><img src="logo/logo_kemenkes_dark.png"
                             style="margin: auto; width: 100px; left: 50%; " alt="logo"></p>
                     <h1 id="register">
-                        <strong>SURVEY FORM</strong>
+                        <strong>FORM SURVEY</strong>
                     </h1>
                     <h4 class="text-center judul">Skrining Merokok Anak Sekolah</h4>
                     <div class="all-steps" id="all-steps">
@@ -38,19 +38,118 @@
                     <div class="tab">
                         <h6 class="judul">Bagian A.<br>Keterangan Tempat</h6>
                         <p class="pertanyaan" id="no_kuesioner">
-                            <input placeholder="No Kuesioner" oninput="this.className = ''" name="kuesioner">
+                            <input placeholder="No Kuesioner" oninput="this.className = ''" name="kuesioner" required>
                         </p>
 
                         <p class="pertanyaan" id="sekolah">
                             <input placeholder="Nama Sekolah" oninput="this.className = ''" name="sekolah">
                         </p>
 
+                        <!-- <p class="" id="provinsi">
+                            <input class="form-control" disabled="disabled" placeholder="Provinsi"
+                                oninput="this.className = ''" name="provinsi" required>
+                            <input type="radio" id="html" name="fav_language" value="HTML">
+                              <label for="html">HTML</label><br>
+                              <input type="radio" id="css" name="fav_language" value="CSS">
+                              <label for="css">CSS</label><br>
+                              <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                              <label for="javascript">JavaScript</label>
+                        </p> -->
+
                         <p class="pertanyaan" id="provinsi">
-                            <input placeholder="Provinsi" oninput="this.className = ''" name="provinsi">
+                        <div class="form-group">
+                            <select class="selection-form" style="width: 100%;" tabindex="-1" aria-hidden="true">
+                                <option class=" list" selected="selected" name="kabkota">Pilih
+                                    Provinsi :
+                                </option>
+                                <option value="" class="list">Nanggroe Aceh Darussalam</option>
+                                <option value="" class="list">Sumatera Utara</option>
+                                <option value="" class="list">Sumatera Selatan</option>
+                                <option value="" class="list">Sumatera Barat</option>
+                                <option value="" class="list">Bengkulu</option>
+                                <option value="" class="list">Riau</option>
+                                <option value="" class="list">Kepulauan Riau</option>
+                                <option value="" class="list">Jambi</option>
+                                <option value="" class="list">Lampung</option>
+                                <option value="" class="list">Bangka Belitung</option>
+                                <option value="" class="list">Kalimantan Barat</option>
+                                <option value="" class="list">Kalimantan Timur</option>
+                                <option value="" class="list">Kalimantan Selatan</option>
+                                <option value="" class="list">Kalimantan Tengah</option>
+                                <option value="" class="list">Kalimantan Utara</option>
+                                <option value="" class="list">Banten</option>
+                                <option value="" class="list">DKI Jakarta</option>
+                                <option value="" class="list">Jawa Barat</option>
+                                <option value="" class="list">Jawa Tengah</option>
+                                <option value="" class="list">Daerah Istimewa Yogyakarta</option>
+                                <option value="" class="list">Jawa Timur</option>
+                                <option value="" class="list">Bali</option>
+                                <option value="" class="list">Nusa Tenggara Timur</option>
+                                <option value="" class="list">Nusa Tenggara Barat</option>
+                                <option value="" class="list">Gorontalo</option>
+                                <option value="" class="list">Sulawesi Barat</option>
+                                <option value="" class="list">Sulawesi Tengah</option>
+                                <option value="" class="list">Sulawesi Utara</option>
+                                <option value="" class="list">Sulawesi Tenggara</option>
+                                <option value="" class="list">Sulawesi Selatan</option>
+                                <option value="" class="list">Maluku Utara</option>
+                                <option value="" class="list">Maluku</option>
+                                <option value="" class="list">Papua Barat</option>
+                                <option value="" class="list">Papua</option>
+                                <option value="" class="list">Papua Tengah</option>
+                                <option value="" class="list">Papua Pegunungan</option>
+                                <option value="" class="list">Papua Selatan</option>
+                                <option value="" class="list">Papua Barat Daya</option>
+                            </select>
+                        </div>
                         </p>
 
                         <p class="pertanyaan" id="kabkota">
-                            <input placeholder="Kabupaten/Kota" oninput="this.className = ''" name="kabkota">
+                        <div class="form-group">
+                            <select class="selection-form" style="width: 100%;" tabindex="-1" aria-hidden="true">
+                                <option class="list" selected="selected" name="kabkota">Pilih
+                                    Kabupaten/Kota :
+                                </option>
+                                <option value="" class="list">Nanggroe Aceh Darussalam</option>
+                                <option value="" class="list">Sumatera Utara</option>
+                                <option value="" class="list">Sumatera Selatan</option>
+                                <option value="" class="list">Sumatera Barat</option>
+                                <option value="" class="list">Bengkulu</option>
+                                <option value="" class="list">Riau</option>
+                                <option value="" class="list">Kepulauan Riau</option>
+                                <option value="" class="list">Jambi</option>
+                                <option value="" class="list">Lampung</option>
+                                <option value="" class="list">Bangka Belitung</option>
+                                <option value="" class="list">Kalimantan Barat</option>
+                                <option value="" class="list">Kalimantan Timur</option>
+                                <option value="" class="list">Kalimantan Selatan</option>
+                                <option value="" class="list">Kalimantan Tengah</option>
+                                <option value="" class="list">Kalimantan Utara</option>
+                                <option value="" class="list">Banten</option>
+                                <option value="" class="list">DKI Jakarta</option>
+                                <option value="" class="list">Jawa Barat</option>
+                                <option value="" class="list">Jawa Tengah</option>
+                                <option value="" class="list">Daerah Istimewa Yogyakarta</option>
+                                <option value="" class="list">Jawa Timur</option>
+                                <option value="" class="list">Bali</option>
+                                <option value="" class="list">Nusa Tenggara Timur</option>
+                                <option value="" class="list">Nusa Tenggara Barat</option>
+                                <option value="" class="list">Gorontalo</option>
+                                <option value="" class="list">Sulawesi Barat</option>
+                                <option value="" class="list">Sulawesi Tengah</option>
+                                <option value="" class="list">Sulawesi Utara</option>
+                                <option value="" class="list">Sulawesi Tenggara</option>
+                                <option value="" class="list">Sulawesi Selatan</option>
+                                <option value="" class="list">Maluku Utara</option>
+                                <option value="" class="list">Maluku</option>
+                                <option value="" class="list">Papua Barat</option>
+                                <option value="" class="list">Papua</option>
+                                <option value="" class="list">Papua Tengah</option>
+                                <option value="" class="list">Papua Pegunungan</option>
+                                <option value="" class="list">Papua Selatan</option>
+                                <option value="" class="list">Papua Barat Daya</option>
+                            </select>
+                        </div>
                         </p>
 
                         <p class="pertanyaan" id="puskesmas">
@@ -65,18 +164,39 @@
                     <!-- Halaman 2 -->
                     <div class="tab">
                         <h6 class="judul">Bagian B.<br>Karakteristik Responden (Siswa Kelas 4 s/d 12)</h6>
-                        <p class="pertanyaan" id="nama_lengkap"><input placeholder="Nama Lengkap"
-                                oninput="this.className = ''" name="nama_lengkap"></p>
-                        <p class="pertanyaan" id="nik"><input placeholder="NIK" oninput="this.className = ''"
-                                name="nik"></p>
-                        <p class="pertanyaan" id="kelas"><input placeholder="Kelas" oninput="this.className = ''"
-                                name="kelas"></p>
-                        <p class="pertanyaan" id="tanggal_lahir"><input placeholder="Tanggal Lahir"
-                                oninput="this.className = ''" name="tanggal_lahir"></p>
-                        <p class="pertanyaan" id="umur"><input placeholder="Umur" oninput="this.className = ''"
-                                name="umur"></p>
-                        <p class="pertanyaan" id="jenis_kelamin"><input placeholder="Jenis Kelamin"
-                                oninput="this.className = ''" name="jenis_kelamin"></p>
+                        <p class="pertanyaan" id="nama_lengkap">
+                            <input placeholder="Nama Lengkap" oninput="this.className = ''" name="nama_lengkap">
+                        </p>
+
+                        <p class="pertanyaan" id="nik">
+                            <input placeholder="NIK" oninput="this.className = ''" name="nik">
+                        </p>
+
+                        <p class="pertanyaan" id="kelas">
+                            <input placeholder="Kelas" oninput="this.className = ''" name="kelas">
+                        </p>
+
+                        <p class="pertanyaan" id="tanggal_lahir">
+                            <input type="date" id="tanggal_lahir" placeholder="Tanggal Lahir"
+                                oninput="this.className = ''" name="tanggal_lahir">
+                        </p>
+
+                        <p class="pertanyaan" id="umur">
+                            <input placeholder="Umur (tuliskan angka saja)" oninput="this.className = ''" name="umur">
+                        </p>
+
+                        <p class="pertanyaan" id="jenis_kelamin">
+                            <input placeholder="Jenis Kelamin" oninput="this.className = ''" name="jenis_kelamin">
+                        <div class="form-group">
+                            <select class="selection-form" style="width: 100%;" tabindex="-1" aria-hidden="true">
+                                <option class="list" selected="selected" name="jenis_kelamin">Jenis Kelamin
+                                    :
+                                </option>
+                                <option value="laki-laki" class="list">Laki-laki</option>
+                                <option value="perempuan" class="list">Perempuan</option>
+                            </select>
+                        </div>
+                        </p>
                     </div>
 
                     <!-- Halaman 3 -->

@@ -25,7 +25,8 @@ body {
     opacity: 1;
 }
 
-.judul {
+.judul,
+.selection-form {
     /* background-color: red !important; */
     color: var(--warna7);
 }
@@ -46,7 +47,9 @@ h1 {
     text-align: center;
 }
 
-input {
+/* FORM CONTROL */
+.pertanyaan input,
+.selection-form {
     padding: 10px;
     width: 100%;
     font-size: 17px;
@@ -54,18 +57,24 @@ input {
     border-radius: 10px;
     -webkit-appearance: none;
     appearance: none;
+    /* background-color: #2eb4ad; */
 }
 
-
-
+.selection-form:focus,
 .tab input:focus {
     border: 1px solid var(--warna1) !important;
     outline: none;
 }
 
-input.invalid {
+.selection-form .invalid {
     border: 2px solid #d2191966;
 }
+
+.pertanyaan input.invalid {
+    border: 2px solid #d2191966;
+}
+
+/* END FORM CONTROL */
 
 .tab {
     display: none
@@ -128,9 +137,7 @@ button:focus {
     color: var(--warna2);
     background: var(--warna1);
     opacity: 1;
-
 }
-
 
 .all-steps {
     text-align: center;
