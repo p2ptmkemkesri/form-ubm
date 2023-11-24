@@ -15,11 +15,14 @@
 </head>
 
 <body>
-    <div class="container mt-5">
+    <div class="container mt-5 mb-5">
         <div class="row d-flex justify-content-center align-items-center">
             <div class="col-md-8">
                 <form id="regForm">
-                    <h1 id="register">Survey Form</h1>
+                    <p class="text-center"><img src="logo/logo_kemenkes_dark.png"
+                            style="margin: auto; width: 100px; left: 50%; " alt="logo"></p>
+                    <h1 id="register">
+                        Survey Form</h1>
                     <h4 class="text-center">Skrining Merokok Anak Sekolah</h4>
                     <div class="all-steps" id="all-steps">
                         <span class="step"><i class="fa fa-user"></i></span>
@@ -30,32 +33,70 @@
                         <span class="step"><i class="fa fa-mobile-phone"></i></span>
                     </div>
 
+                    <!-- Halaman 1 -->
                     <div class="tab">
-                        <h6>Halaman 1</h6>
-                        <p>
-                            <input placeholder="Name..." oninput="this.className = ''" name="fname">
+                        <h6>Bagian A.<br>Keterangan Tempat</h6>
+                        <p class="pertanyaan" id="no_kuesioner">
+                            <input placeholder="No Kuesioner" oninput="this.className = ''" name="kuesioner">
                         </p>
 
-                        <p>
-                            <input placeholder="Name..." oninput="this.className = ''" name="fname">
+                        <p class="pertanyaan" id="sekolah">
+                            <input placeholder="Nama Sekolah" oninput="this.className = ''" name="sekolah">
                         </p>
 
-                        <p>
-                            <input placeholder="Name..." oninput="this.className = ''" name="fname">
+                        <p class="pertanyaan" id="provinsi">
+                            <input placeholder="Provinsi" oninput="this.className = ''" name="provinsi">
                         </p>
 
+                        <p class="pertanyaan" id="kabkota">
+                            <input placeholder="Kabupaten/Kota" oninput="this.className = ''" name="kabkota">
+                        </p>
+
+                        <p class="pertanyaan" id="puskesmas">
+                            <input placeholder="Puskesmas" oninput="this.className = ''" name="puskesmas">
+                        </p>
+
+                        <p class="pertanyaan" id="nama_petugas">
+                            <input placeholder="Nama Petugas" oninput="this.className = ''" name="nama_petugas">
+                        </p>
                     </div>
-                    <div class="tab">
-                        <h6>Halaman 2</h6>
-                        <p><input placeholder="City" oninput="this.className = ''" name="dd"></p>
-                        <p><input placeholder="City" oninput="this.className = ''" name="dd"></p>
-                        <p><input placeholder="City" oninput="this.className = ''" name="dd"></p>
 
-                    </div>
+                    <!-- Halaman 2 -->
                     <div class="tab">
-                        <h6>Halaman 3</h6>
-                        <p><input placeholder="Isi pertanyaan..." oninput="this.className = ''" name="email"></p>
-                        <p><input placeholder="Isi pertanyaan..." oninput="this.className = ''" name="email"></p>
+                        <h6>Bagian B.<br>Karakteristik Responden (Siswa Kelas 4 s/d 12)</h6>
+                        <p class="pertanyaan" id="nama_lengkap"><input placeholder="Nama Lengkap"
+                                oninput="this.className = ''" name="nama_lengkap"></p>
+                        <p class="pertanyaan" id="nik"><input placeholder="NIK" oninput="this.className = ''"
+                                name="nik"></p>
+                        <p class="pertanyaan" id="kelas"><input placeholder="Kelas" oninput="this.className = ''"
+                                name="kelas"></p>
+                        <p class="pertanyaan" id="tanggal_lahir"><input placeholder="Tanggal Lahir"
+                                oninput="this.className = ''" name="tanggal_lahir"></p>
+                        <p class="pertanyaan" id="umur"><input placeholder="Umur" oninput="this.className = ''"
+                                name="umur"></p>
+                        <p class="pertanyaan" id="jenis_kelamin"><input placeholder="Jenis Kelamin"
+                                oninput="this.className = ''" name="jenis_kelamin"></p>
+                    </div>
+
+                    <!-- Halaman 3 -->
+                    <div class="tab">
+                        <h6>Bagian C.<br>Perilaku Merokok</h6>
+                        <p class="pertanyaan" id="c1a"><input placeholder="Apakah anda merokok?"
+                                oninput="this.className = ''" name="c1a">
+                            <li>Ya, setiap hari</li>
+                            <li>Ya, kadang-kadang</li>
+                            <li>Pernah mencoba walau hanya 1 hisapan</li>
+                            <li>Tidak pernah merokok/tidak pernah mencoba</li>
+                        </p>
+                        <p class="pertanyaan" id="c1b"><input
+                                placeholder="Jika jawaban 1 dan 2, jenis rokok apa yang digunakan?"
+                                oninput="this.className = ''" name="email">
+                            <li>Rokok konvensional :
+                                rokok filter/putih, kretek, tingwe, dll</li>
+                            <li>Rokok elektronik : vape, IQOS, dll</li>
+                            <li>Keduanya</li>
+                            <li>Lainnya</li>
+                        </p>
                         <p><input placeholder="Isi pertanyaan..." oninput="this.className = ''" name="email"></p>
                         <p><input placeholder="Isi pertanyaan..." oninput="this.className = ''" name="email"></p>
 
