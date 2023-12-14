@@ -5,13 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Survey UBM</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> -->
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"> -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"> -->
+    <link rel="stylesheet" href="{{asset('frontend/style.css')}}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" type="image/x-icon" href="logo/logo_ptm.png">
+    <link rel="icon" type="image/x-icon" href="{{asset('frontend/logo/logo_ptm.png')}}">
 </head>
 
 <body>
@@ -19,7 +16,7 @@
         <div class="row d-flex justify-content-center align-items-center">
             <div class="col-md-8">
                 <form id="regForm">
-                    <p class="text-center"><img src="logo/logo_kemenkes_dark.png"
+                    <p class="text-center"><img src="{{asset('frontend/logo/logo_kemenkes_dark.png')}}"
                             style="margin: auto; width: 100px; left: 50%; " alt="logo"></p>
                     <h1 id="register">
                         <strong>FORM SURVEY</strong>
@@ -340,7 +337,7 @@
                         <p><input placeholder="Isi pertanyaan" oninput="this.className = ''" name="uname"></p>
                         <p><input placeholder="Isi pertanyaan" oninput="this.className = ''" name="uname"></p>
                     </div>
-                    <div class="thanks-message text-center" id="text-message"> <img src="okay.png" width="100"
+                    <div class="thanks-message text-center" id="text-message"> <img src="{{asset('frontend/okay.png')}}" width="100"
                             class="mb-4">
                         <h3 class="judul">Data terkirim!</h3> <span>Terima kasih atas respon yang diberikan, sangat
                             membantu kami.</span>
@@ -367,7 +364,7 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
-    <script src="script.js">
+    <script src="{{asset('frontend/script.js')}}">
 
     </script>
 </body>
