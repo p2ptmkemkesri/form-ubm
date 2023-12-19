@@ -16,7 +16,7 @@
                         <div class="form-group">
                             <label for="provinsi" class="label">Provinsi</label>
                             <select class="selection-form" style="width: 100%;" tabindex="-1" aria-hidden="true">
-                                <option class=" list" selected="selected" name="kabkota">Pilih
+                                <option class=" list" selected="selected" name="provinsi">Pilih
                                     Provinsi
                                 </option>
                                 <option value="" class="list">Nanggroe Aceh Darussalam</option>

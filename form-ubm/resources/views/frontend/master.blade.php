@@ -15,7 +15,8 @@
     <div class="container mt-5 mb-5">
         <div class="row d-flex justify-content-center align-items-center">
             <div class="col-md-8">
-                <form id="regForm">
+                <form method="POST" action="{{route('store.form')}}" id="regForm">
+                    @csrf
                     <p class="text-center"><img src="{{asset('frontend/logo/logo_kemenkes_dark.png')}}"
                             style="margin: auto; width: 100px; left: 50%; " alt="logo"></p>
                     <h1 id="register">

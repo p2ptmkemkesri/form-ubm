@@ -22,4 +22,5 @@ Route::get('/', function () {
 // Form All Routes
 Route::controller(FormController::class)->group(function(){
     Route::get('/contact-form', 'ContactForm')->name('contact.form');
+    Route::post('/store', 'StoreForm')->name('store.form');
 });
