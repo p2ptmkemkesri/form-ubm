@@ -18,6 +18,9 @@ Route::get('/', function () {
     return view('frontend.index');
 });
 
+Route::get('/thanks', function() {
+    return view('frontend.pages.thanks');
+});
 
 // Form All Routes
 Route::controller(FormController::class)->group(function(){

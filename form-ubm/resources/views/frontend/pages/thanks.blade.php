@@ -23,25 +23,13 @@
                         <strong>FORM SURVEY</strong>
                     </h1>
                     <h4 class="text-center judul">Skrining Merokok Anak Sekolah</h4>
-                    <div class="all-steps" id="all-steps">
-                        <span class="step"><i class="fa fa-user"></i></span>
-                        <span class="step"><i class="fa fa-map-marker"></i></span>
-                        <span class="step"><i class="fa fa-shopping-bag"></i></span>
-                        <span class="step"><i class="fa fa-car"></i></span>
-                        <span class="step"><i class="fa fa-spotify"></i></span>
-                        <span class="step"><i class="fa fa-mobile-phone"></i></span>
-                    </div>
-
-                   @yield('main-content')
-                 
-                    
-                    <div style="overflow:auto;" id="nextprevious">
-                        <div style="float:right;">
-                            <button type="button" id="prevBtn" onclick="nextPrev(-1)"><i
-                                    class="fa fa-angle-double-left"></i></button>
-                            <button type="button" id="nextBtn" onclick="nextPrev(1)"><i
-                                    class="fa fa-angle-double-right"></i></button>
-                        </div>
+                    {{-- thanks message --}}
+                    <div class="text-center" id="text-message"> 
+                        {{-- <img src="{{asset('frontend/okay.png')}}" width="100"
+                            class="mb-4"> --}}
+                        <img src="{{asset('frontend/logo/icons8-double-tick.gif')}}" width="70"  class="mb-4">
+                        <h3 class="judul">Data terkirim!</h3> <span>Terima kasih atas respon yang diberikan, sangat
+                            membantu kami.</span>
                     </div>
                 </form>
             </div>
@@ -63,3 +51,5 @@
 </body>
 
 </html>
+
+
