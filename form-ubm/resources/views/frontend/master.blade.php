@@ -38,6 +38,7 @@
                         <h3 class="judul">Data terkirim!</h3> <span>Terima kasih atas respon yang diberikan, sangat
                             membantu kami.</span>
                     </div>
+                    
                     <div style="overflow:auto;" id="nextprevious">
                         <div style="float:right;">
                             <button type="button" id="prevBtn" onclick="nextPrev(-1)"><i

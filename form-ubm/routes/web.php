@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FormController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,4 +16,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('frontend.index');
+});
+
+
+// Form All Routes
+Route::controller(FormController::class)->group(function(){
+    Route::get('/contact-form', 'ContactForm')->name('contact.form');
 });
