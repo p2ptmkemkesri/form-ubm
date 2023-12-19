@@ -31,14 +31,13 @@
                         <span class="step"><i class="fa fa-mobile-phone"></i></span>
                     </div>
 
-                    {{-- Thanks message --}}
-                    <div class="thanks-message text-center" id="text-message"> <img src="{{asset('frontend/okay.png')}}" width="100"
+                   @yield('main-content')
+                 
+                    <div class="thanks-message text-center" id="text-message"> <img src="okay.png" width="100"
                             class="mb-4">
                         <h3 class="judul">Data terkirim!</h3> <span>Terima kasih atas respon yang diberikan, sangat
                             membantu kami.</span>
                     </div>
-
-                    {{-- Previous Button --}}
                     <div style="overflow:auto;" id="nextprevious">
                         <div style="float:right;">
                             <button type="button" id="prevBtn" onclick="nextPrev(-1)"><i
@@ -47,7 +46,6 @@
                                     class="fa fa-angle-double-right"></i></button>
                         </div>
                     </div>
-
                 </form>
             </div>
         </div>

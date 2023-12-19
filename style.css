@@ -77,7 +77,8 @@ h1 {
 /* END FORM CONTROL */
 
 .tab {
-    display: none
+    display: none;
+    background-color: #d3db25;
 }
 
 button {
