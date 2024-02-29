@@ -31,6 +31,6 @@ class FormController extends Controller
             'jenis_kelamin'=>$request->jenis_kelamin,
         ]);
 
-        return redirect('/thanks');
+        return redirect('/success');
     }
 }
