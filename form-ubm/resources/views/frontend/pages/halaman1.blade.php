@@ -14,18 +14,7 @@
 
     <p class="pertanyaan" id="provinsi">
     <div class="form-group">
-        <label for="provinsi" class="label">Provinsi</label>
-
-        <p class="pertanyaan" id="jenis_kelamin">
-        <div class="form-group">
-            <label for="jenis_kelamin" class="label">Provinsi</label><br>
-            <input type="radio" name="Aceh" value="Aceh" id="jenis_kelamin" selected>Aceh<br>
-            <input type="radio" name="jenis_kelamin" value="perempuan" id="jenis_kelamin">Perempuan
-        </div>
-        </p>
-
-
-        {{-- <select class="selection-form" style="width: 100%;" tabindex="-1" aria-hidden="true">
+        <select class="selection-form" style="width: 100%;" tabindex="-1" aria-hidden="true">
             <option class=" list" selected="selected" name="provinsi">Pilih
                 Provinsi
             </option>
@@ -67,8 +56,10 @@
             <option value="" class="list">Papua Pegunungan</option>
             <option value="" class="list">Papua Selatan</option>
             <option value="" class="list">Papua Barat Daya</option>
-        </select> --}}
+        </select>
     </div>
+
+
     </p>
 
     <p class="pertanyaan" id="kabkota">
