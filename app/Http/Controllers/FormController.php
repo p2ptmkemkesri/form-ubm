@@ -4,26 +4,23 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Form;
-use App\Models\Province;
-use App\Models\Regency;
-use App\Models\District;
-use App\Models\Village;
+use App\Models\Provinsi;
+use App\Models\Kabkota;
 
 class FormController extends Controller
 {
     public function ContactForm() {
         // Get semua data
-        $provinces = Province::all();
-        $regencies = Regency::all();
-        $districts = District::all();
-        $villages = Village::all();
-        return view('frontend.index', compact('provinces', 'regencies', 'districts', 'villages'));
+        $provinces = Provinsi::orderBy('kode_prov','ASC')->get();
+        $regencies = Kabkota::all();
+        return view('frontend.index', compact('provinces', 'regencies'));
+        return view('frontend.index');
     }
 
     public function StoreForm(Request $request) {
         Form::insert([
             // halaman 1
-            'kuesioner'=>$request->kuesioner,
+            // 'kuesioner'=>$request->kuesioner,
             'sekolah'=>$request->sekolah,
             'provinsi'=>$request->provinsi,
             'kabkota'=>$request->kabkota,

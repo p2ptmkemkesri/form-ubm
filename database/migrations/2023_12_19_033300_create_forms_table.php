@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('forms', function (Blueprint $table) {
             $table->id();
             // halaman 1
-            $table->string('kuesioner')->nullable();
+            // $table->string('kuesioner')->nullable();
             $table->string('sekolah')->nullable();
             $table->string('provinsi')->nullable();
             $table->string('kabkota')->nullable();
@@ -29,6 +29,10 @@ return new class extends Migration
             $table->string('tanggal_lahir')->nullable();
             $table->string('umur')->nullable();
             $table->string('jenis_kelamin')->nullable();
+
+            //halaman 3
+            
+            
 
             $table->timestamps();
         });

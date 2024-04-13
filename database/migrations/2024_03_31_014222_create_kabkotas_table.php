@@ -11,11 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('kab_kotas', function (Blueprint $table) {
+        Schema::create('kabkotas', function (Blueprint $table) {
             $table->id();
-            $table->string('nama_kabkota')->nullable();
-            $table->unsignedBigInteger('provinsi_id');
-            $table->foreign('provinsi_id')->references('id')->on('provinsis');
+            $table->string('provinsi_id')->nullable();
+            $table->string('nama_kabkota');
+            $table->string('kode_kabkota');
             $table->timestamps();
         });
     }
@@ -25,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('kab_kotas');
+        Schema::dropIfExists('kabkotas');
     }
 };

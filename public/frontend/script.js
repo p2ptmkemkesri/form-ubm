@@ -64,3 +64,12 @@ function fixStepIndicator(n) {
   }
   x[n].className += " active";
 }
+
+ $('.js-example-basic-single').select2({
+            placeholder: 'Select an option'
+ });
+        
+//  $(window).on('load', function() {
+//             $('.myModal').modal('show');
+//  });
+        

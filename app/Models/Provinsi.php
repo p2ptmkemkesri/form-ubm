@@ -9,4 +9,5 @@ class Provinsi extends Model
 {
     use HasFactory;
     protected $guarded = [];
+
 }
