@@ -60,10 +60,10 @@ Route::controller(ProvinsiController::class)->group(function () {
 
 
 // FORM
-// Route::controller(FormController::class)->group(function () {
-//     Route::get('/', 'ContactForm')->name('show.form');
-//     Route::post('/store/form', 'StoreForm')->name('store.form');
-// })->middleware(['auth', 'verified'])->name('dashboard');
+Route::controller(FormController::class)->group(function () {
+    Route::get('/', 'ContactForm')->name('show.form');
+    Route::post('/store/form', 'StoreForm')->name('store.form');
+})->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::controller(FormController::class)->group(function () {
     Route::get('/', 'ContactForm')->name('show.form');
@@ -71,22 +71,11 @@ Route::controller(FormController::class)->group(function () {
 });
 
 
-
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
-
-
-// Route::controller(OrganisasiController::class)->group( function() {
-//     Route::get('/all/organisasi', 'AllOrganisasi')->name('all.organisasi');
-//     Route::get('/add/organisasi', 'AddOrganisasi')->name('add.organisasi');
-//     Route::post('/store/organisasi', 'StoreOrganisasi')->name('store.organisasi');
-//     Route::get('/edit/organisasi/{id}', 'EditOrganisasi')->name('edit.organisasi');
-//     Route::post('/update/organisasi/{id}', 'UpdateOrganisasi')->name('update.organisasi');
-//     Route::get('/delete/organisasi/{id}', 'DeleteOrganisasi')->name('delete.organisasi');
-// })->middleware(['auth', 'verified'])->name('dashboard');
 
 
 require __DIR__.'/auth.php';

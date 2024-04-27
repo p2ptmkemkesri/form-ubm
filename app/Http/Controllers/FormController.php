@@ -14,7 +14,6 @@ class FormController extends Controller
         $provinces = Provinsi::orderBy('kode_prov','ASC')->get();
         $regencies = Kabkota::all();
         return view('frontend.index', compact('provinces', 'regencies'));
-        return view('frontend.index');
     }
 
     public function StoreForm(Request $request) {
