@@ -6,7 +6,7 @@
     @include('frontend.pages.halaman3')
     @include('frontend.pages.halaman3a')
     @include('frontend.pages.halaman3b')
-    @include('frontend.pages.halaman3lanjutan')
+    @include('frontend.pages.halaman4')
     {{-- @include('frontend.pages.halaman4')
     @include('frontend.pages.halaman5')
     @include('frontend.pages.halaman6')
