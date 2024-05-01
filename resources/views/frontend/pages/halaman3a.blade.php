@@ -3,7 +3,7 @@
 <div class="tab">
     <h6 class="judul">MEROKOK SETIAP HARI</h6>
 
-    <p class="pertanyaan" id="c2a">
+    <p class="pertanyaan mt-4" id="c2a">
         <label for="c2a" class="label">C2a. Jika merokok SETIAP HARI, berapa jumlah batang rokok yang kamu hisap per
             HARI?
         </label>

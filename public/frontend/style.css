@@ -17,6 +17,7 @@
     --warna5: #63c6c2;
     --warna6: #bbbbbb;
     --warna7: #6c6c6c;
+    --warna8: #4a4a4a;
 }
 
 body {
@@ -154,4 +155,9 @@ button:focus {
 
 .thanks-message {
     display: none
+}
+
+.label {
+    font-weight: 700;
+    color: var(--warna8);
 }

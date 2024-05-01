@@ -2,17 +2,17 @@
 <!-- Keterangan Tempat -->
 <div class="tab">
     <h6 class="judul">BAGIAN A.<br>KETERANGAN TEMPAT</h6>
-    {{-- <p class="pertanyaan" id="no_kuesioner">
+    {{-- <p class="pertanyaan mt-4" id="no_kuesioner">
         <label for="kuesioner" class="label">Nomor Kuesioner</label>
         <input oninput="this.className = ''" name="kuesioner" placeholder="Ketik di sini">
     </p> --}}
 
-    <p class="pertanyaan" id="sekolah">
+    <p class="pertanyaan mt-4" id="sekolah">
         <label for="sekolah" class="label">A1. Nama Sekolah/Madrasah</label>
         <input oninput="this.className = ''" name="sekolah" placeholder="Ketik di sini">
     </p>
 
-    <p class="pertanyaan" id="provinsi">
+    <p class="pertanyaan mt-4" id="provinsi">
     <div class="form-group">
         <label for="provinsi" class="label">A2. Provinsi</label>
         <select class="form-control js-example-basic-single" style="width: 100%;" tabindex="-1" aria-hidden="true">
@@ -26,7 +26,7 @@
     </div>
     </p>
 
-    <p class="pertanyaan" id="kabkota">
+    <p class="pertanyaan mt-4" id="kabkota">
     <div class="form-group">
         <label for="kabkota" class="label">A3. Kabupaten/Kota</label>
         <select class="form-control js-example-basic-single" style="width: 100%;" tabindex="-1" aria-hidden="true">
@@ -40,17 +40,17 @@
     </div>
     </p>
 
-    <p class="pertanyaan" id="puskesmas">
+    <p class="pertanyaan mt-4" id="puskesmas">
         <label for="puskesmas" class="label">A4. Puskesmas</label>
         <input oninput="this.className = ''" name="puskesmas" placeholder="Ketik di sini">
     </p>
 
-    <p class="pertanyaan" id="nama_petugas">
+    <p class="pertanyaan mt-4" id="nama_petugas">
         <label for="nama_petugas" class="label">A5. Petugas Pelaksana</label>
         <input oninput="this.className = ''" name="nama_petugas" placeholder="Ketik di sini">
     </p>
 
-    <p class="pertanyaan" id="hari_tanggal">
+    <p class="pertanyaan mt-4" id="hari_tanggal">
         <label for="hari_tanggal" class="label">A6. Hari/Tanggal Pengisian</label>
         <input type="date" id="hari_tanggal" placeholder="Hari/Tanggal Pengisian" oninput="this.className = ''"
             name="hari_tanggal">
