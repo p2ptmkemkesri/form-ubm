@@ -1,3 +1,4 @@
+// TAB
 var currentTab = 0;
 document.addEventListener("DOMContentLoaded", function (event) {
   showTab(currentTab);
@@ -37,6 +38,8 @@ function nextPrev(n) {
   showTab(currentTab);
 }
 
+
+// VALIDATE FORM
 function validateForm() {
   var x,
     y,
@@ -65,21 +68,20 @@ function fixStepIndicator(n) {
   x[n].className += " active";
 }
 
+
+// SELECT2
  $('.js-example-basic-single').select2({
             placeholder: 'Select an option'
  });
         
+
+//  MODAL
 //  $(window).on('load', function() {
 //             $('.myModal').modal('show');
 //  });
 
 
-// Tooltip
-// var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-// var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-//   return new bootstrap.Tooltip(tooltipTriggerEl)
-// })
-
+// TOOLTIP
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 

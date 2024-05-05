@@ -56,11 +56,27 @@
 
                     {{-- STEPS --}}
                     <div class="all-steps" id="all-steps">
+                        {{-- <span class="step">1</span>
+                        <span class="step">2</span>
+                        <span class="step">3</span>
+                        <span class="step">4</span>
+                        <span class="step">5</span>
+                        <span class="step">6</span> --}}
+
                         <span class="step"><i class="fa fa-user"></i></span>
                         <span class="step"><i class="fa fa-map-marker"></i></span>
                         <span class="step"><i class="fa fa-shopping-bag"></i></span>
                         <span class="step"><i class="fa fa-car"></i></span>
                         <span class="step"><i class="fa fa-spotify"></i></span>
+                        <span class="step"><i class="fa fa-mobile-phone"></i></span>
+                        <span class="step"><i class="fa fa-mobile-phone"></i></span>
+                        <span class="step"><i class="fa fa-mobile-phone"></i></span>
+                        <span class="step"><i class="fa fa-mobile-phone"></i></span>
+                        <span class="step"><i class="fa fa-mobile-phone"></i></span>
+                        <span class="step"><i class="fa fa-mobile-phone"></i></span>
+                        <span class="step"><i class="fa fa-mobile-phone"></i></span>
+                        <span class="step"><i class="fa fa-mobile-phone"></i></span>
+                        <span class="step"><i class="fa fa-mobile-phone"></i></span>
                         <span class="step"><i class="fa fa-mobile-phone"></i></span>
                     </div>
 

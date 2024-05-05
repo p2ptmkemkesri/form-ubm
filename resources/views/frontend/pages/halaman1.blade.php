@@ -9,13 +9,13 @@
 
     <p class="pertanyaan mt-4" id="sekolah">
         <label for="sekolah" class="label">A1. Nama Sekolah/Madrasah</label>
-        <input oninput="this.className = ''" name="sekolah" placeholder="Ketik di sini">
+        <input type="text" oninput="this.className = ''" name="sekolah" placeholder="Ketik di sini">
     </p>
 
     <p class="pertanyaan mt-4" id="provinsi">
     <div class="form-group">
         <label for="provinsi" class="label">A2. Provinsi</label>
-        <select class="form-control js-example-basic-single" style="width: 100%;" tabindex="-1" aria-hidden="true">
+        <select class="js-example-basic-single" style="width: 100%;" tabindex="-1" aria-hidden="true">
             <option class="list" selected="selected" name="provinsi" disabled>Pilih
                 Provinsi
             </option>
@@ -29,7 +29,7 @@
     <p class="pertanyaan mt-4" id="kabkota">
     <div class="form-group">
         <label for="kabkota" class="label">A3. Kabupaten/Kota</label>
-        <select class="form-control js-example-basic-single" style="width: 100%;" tabindex="-1" aria-hidden="true">
+        <select class="js-example-basic-single" style="width: 100%;" tabindex="-1" aria-hidden="true">
             <option class="list" selected="selected" name="kabkota" disabled>Pilih
                 Kabupaten/Kota
             </option>
@@ -42,12 +42,12 @@
 
     <p class="pertanyaan mt-4" id="puskesmas">
         <label for="puskesmas" class="label">A4. Puskesmas</label>
-        <input oninput="this.className = ''" name="puskesmas" placeholder="Ketik di sini">
+        <input type="text" oninput="this.className = ''" name="puskesmas" placeholder="Ketik di sini">
     </p>
 
     <p class="pertanyaan mt-4" id="nama_petugas">
         <label for="nama_petugas" class="label">A5. Petugas Pelaksana</label>
-        <input oninput="this.className = ''" name="nama_petugas" placeholder="Ketik di sini">
+        <input type="text" oninput="this.className = ''" name="nama_petugas" placeholder="Ketik di sini">
     </p>
 
     <p class="pertanyaan mt-4" id="hari_tanggal">

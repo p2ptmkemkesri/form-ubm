@@ -4,20 +4,21 @@
     <h6 class="judul">BAGIAN B.<br>KARAKTERISTIK RESPONDEN</h6>
     <p class="pertanyaan mt-4" id="nama_lengkap">
         <label for="nama_lengkap" class="label">B1. Nama Responden</label>
-        <input oninput="this.className = ''" name="nama_lengkap" data-bs-placement="bottom" data-bs-toggle="tooltip"
-            data-bs-title="Tulikan nama lengkap sesuai akta.">
+        <input type="text" oninput="this.className = ''" name="nama_lengkap" data-bs-placement="bottom"
+            data-bs-toggle="tooltip" data-bs-title="Tulikan nama lengkap sesuai akta.">
     </p>
 
     <p class="pertanyaan mt-4" id="nik">
         <label for="nik" class="label">B2. NIK (Nomor Induk Kependudukan)
         </label>
-        <input oninput="this.className = ''" name="nik" data-bs-placement="bottom" data-bs-toggle="tooltip"
+        <input type="text" oninput="this.className = ''" name="nik" data-bs-placement="bottom"
+            data-bs-toggle="tooltip"
             data-bs-title="NIK berdasarkan KK jika peserta didik belum memiliki KTP. Jika tidak ada NIK mohon diisi angka nol '0'">
     </p>
 
     <p class="pertanyaan mt-4" id="kelas">
         <label for="kelas" class="label">B3. Kelas</label>
-        <select class="form-select form-select" aria-label=".form-select-sm example">
+        <select class="form-select" aria-label=".form-select-sm example">
             <option selected disabled>==Pilih Kelas==</option>
             <option value="4">IV (Empat)</option>
             <option value="5">V (Lima)</option>
