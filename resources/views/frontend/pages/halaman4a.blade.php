@@ -1,23 +1,23 @@
-<!-- Halaman 3 -->
-<!-- Alasan Berhenti Merokok -->
+<!-- Halaman 4 -->
+<!-- PENGETAHUAN TENTANG ROKOK  -->
 <div class="tab">
-    <h6 class="judul">ALASAN BERHENTI MEROKOK</h6>
+    <h6 class="judul">BAGIAN D.(Lanjutan)<br>DAMPAK KESEHATAN AKIBAT MEROKOK </h6>
 
-    {{-- soal c8b --}}
-    <p class="pertanyaan mt-4" id="c8b">
+    <p class="pertanyaan mt-4" id="d1a">
     <div class="form-group">
-        <label for="c8b" class="label">C8b. Bila YA, apa ALASAN UTAMA kamu mau berhenti merokok?</label>
-        <input type="radio" name="c8b" value="kesehatan" id="c8b"> Kondisi kesehatan
+        <label for="d1a" class="label">D1b. Jika YA, pilih SATU menurut kamu dampak kesehatan dari merokok yang kamu
+            ketahui?</label><br>
+
+        <input type="radio" name="d1a" value="kecanduan" id="d1a" selected> Kecanduan
         <br>
-        <input type="radio" name="c8b" value="motivasi" id="c8b"> Motivasi diri sendiri
+        <input type="radio" name="d1a" value="batuk" id="d1a"> Batuk
         <br>
-        <input type="radio" name="c8b" value="saran" id="c8b"> Disarankan orangtua/guru/teman
+        <input type="radio" name="d1a" value="gigi kuning dan mulut berbau" id="d1a"> Gigi kuning dan mulut
+        berbau
         <br>
-        <input type="radio" name="c8b" value="mahal" id="c8b"> Tidak mampu beli/mahal
-        <br>
-        <input type="radio" name="c8b" value="lainnya" id="c8b"> Lainnya:
-        <input oninput="this.className = ''" name="lainnya" data-bs-placement="bottom" data-bs-toggle="tooltip"
-            data-bs-title="Tuliskan di sini">
+        <input type="radio" name="d1a" value="sistem pernapasan terganggu" id="d1a"> Sistem pernapasan
+        terganggu
     </div>
     </p>
+
 </div>
