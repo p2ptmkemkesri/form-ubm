@@ -15,9 +15,5 @@
     @include('frontend.pages.halaman5a')
     @include('frontend.pages.halaman5b')
     @include('frontend.pages.halaman6')
-
-    {{-- @include('frontend.pages.halaman4')
-    @include('frontend.pages.halaman5')
     @include('frontend.pages.halaman6')
-    @include('frontend.pages.halaman7') --}}
 @endsection
