@@ -15,5 +15,5 @@
     @include('frontend.pages.halaman5a')
     @include('frontend.pages.halaman5b')
     @include('frontend.pages.halaman6')
-    @include('frontend.pages.halaman6')
+    @include('frontend.pages.halaman6a')
 @endsection

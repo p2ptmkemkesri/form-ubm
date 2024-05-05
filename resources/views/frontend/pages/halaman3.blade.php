@@ -21,6 +21,4 @@
         pernah mencoba
     </div>
     </p>
-
-
 </div>
